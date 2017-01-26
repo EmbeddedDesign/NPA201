@@ -1,0 +1,235 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NPA_201_Breakout
+LIBS:NPA_201_Breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "NPA 201 Breakout"
+Date "2017-01-26"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR01
+U 1 1 587529D6
+P 4850 3825
+F 0 "#PWR01" H 4850 3675 50  0001 C CNN
+F 1 "+3.3V" H 4850 3965 50  0000 C CNN
+F 2 "" H 4850 3825 50  0000 C CNN
+F 3 "" H 4850 3825 50  0000 C CNN
+	1    4850 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 58752A02
+P 4525 4025
+F 0 "C1" H 4535 4095 50  0000 L CNN
+F 1 "0.1uF" H 4535 3945 50  0000 L CNN
+F 2 "NPA_201_Breakout:C_0402" H 4525 4025 50  0001 C CNN
+F 3 "" H 4525 4025 50  0000 C CNN
+	1    4525 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 58752A57
+P 6325 3975
+F 0 "R1" V 6475 3950 50  0000 L CNN
+F 1 "4.7K" V 6400 3900 50  0000 L CNN
+F 2 "NPA_201_Breakout:R_0402" H 6325 3975 50  0001 C CNN
+F 3 "" H 6325 3975 50  0000 C CNN
+	1    6325 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 58752A7A
+P 6325 3875
+F 0 "R2" V 6175 3825 50  0000 L CNN
+F 1 "4.7K" V 6250 3800 50  0000 L CNN
+F 2 "NPA_201_Breakout:R_0402" H 6325 3875 50  0001 C CNN
+F 3 "" H 6325 3875 50  0000 C CNN
+	1    6325 3875
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58752AFA
+P 5900 4225
+F 0 "#PWR02" H 5900 3975 50  0001 C CNN
+F 1 "GND" H 5900 4075 50  0000 C CNN
+F 2 "" H 5900 4225 50  0000 C CNN
+F 3 "" H 5900 4225 50  0000 C CNN
+	1    5900 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPA201 U1
+U 1 1 58752C86
+P 5375 4025
+F 0 "U1" H 5075 4325 60  0000 C CNN
+F 1 "NPA201" H 5375 3775 60  0000 C CNN
+F 2 "NPA_201_Breakout:NPA_201" H 5425 4075 60  0001 C CNN
+F 3 "" H 5425 4075 60  0001 C CNN
+	1    5375 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3825 4850 3975
+Wire Wire Line
+	4850 3975 4975 3975
+Wire Wire Line
+	4975 3875 4850 3875
+Connection ~ 4850 3875
+Wire Wire Line
+	5775 4075 5900 4075
+Wire Wire Line
+	5900 4075 5900 4225
+Wire Wire Line
+	5775 4175 5900 4175
+Connection ~ 5900 4175
+$Comp
+L +3.3V #PWR03
+U 1 1 58752E04
+P 4525 3825
+F 0 "#PWR03" H 4525 3675 50  0001 C CNN
+F 1 "+3.3V" H 4525 3965 50  0000 C CNN
+F 2 "" H 4525 3825 50  0000 C CNN
+F 3 "" H 4525 3825 50  0000 C CNN
+	1    4525 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58752E1B
+P 4525 4225
+F 0 "#PWR04" H 4525 3975 50  0001 C CNN
+F 1 "GND" H 4525 4075 50  0000 C CNN
+F 2 "" H 4525 4225 50  0000 C CNN
+F 3 "" H 4525 4225 50  0000 C CNN
+	1    4525 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4525 3825 4525 3925
+Wire Wire Line
+	4525 4125 4525 4225
+$Comp
+L CONN_01X02 P1
+U 1 1 58752F3E
+P 4000 4025
+F 0 "P1" H 4000 4175 50  0000 C CNN
+F 1 "PWR_CONN" V 4100 4025 50  0000 C CNN
+F 2 "NPA_201_Breakout:Pin_Header_1x3_2.54mm_Pitch" H 4000 4025 50  0001 C CNN
+F 3 "" H 4000 4025 50  0000 C CNN
+	1    4000 4025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 58752FDF
+P 7325 3925
+F 0 "P2" H 7325 4075 50  0000 C CNN
+F 1 "I2C_CONN" V 7425 3925 50  0000 C CNN
+F 2 "NPA_201_Breakout:Pin_Header_1x3_2.54mm_Pitch" H 7325 3925 50  0001 C CNN
+F 3 "" H 7325 3925 50  0000 C CNN
+	1    7325 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 3875 7125 3875
+Wire Wire Line
+	7075 3975 7125 3975
+Text Label 7075 3875 2    60   ~ 0
+I2C_SDA
+Text Label 7075 3975 2    60   ~ 0
+I2C_SCL
+$Comp
+L +3.3V #PWR05
+U 1 1 58753675
+P 4200 3825
+F 0 "#PWR05" H 4200 3675 50  0001 C CNN
+F 1 "+3.3V" H 4200 3965 50  0000 C CNN
+F 2 "" H 4200 3825 50  0000 C CNN
+F 3 "" H 4200 3825 50  0000 C CNN
+	1    4200 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58753692
+P 4200 4225
+F 0 "#PWR06" H 4200 3975 50  0001 C CNN
+F 1 "GND" H 4200 4075 50  0000 C CNN
+F 2 "" H 4200 4225 50  0000 C CNN
+F 3 "" H 4200 4225 50  0000 C CNN
+	1    4200 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3825 4200 3975
+Wire Wire Line
+	4200 4075 4200 4225
+$Comp
+L +3.3V #PWR07
+U 1 1 58753D6E
+P 6550 3825
+F 0 "#PWR07" H 6550 3675 50  0001 C CNN
+F 1 "+3.3V" H 6550 3965 50  0000 C CNN
+F 2 "" H 6550 3825 50  0000 C CNN
+F 3 "" H 6550 3825 50  0000 C CNN
+	1    6550 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 3975 6550 3975
+Wire Wire Line
+	6550 3975 6550 3825
+Wire Wire Line
+	6425 3875 6550 3875
+Connection ~ 6550 3875
+Wire Wire Line
+	5775 3875 6225 3875
+Wire Wire Line
+	5775 3975 6225 3975
+Text Label 6175 3875 2    60   ~ 0
+I2C_SDA
+Text Label 6175 3975 2    60   ~ 0
+I2C_SCL
+$EndSCHEMATC
