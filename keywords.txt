@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For NPA201 library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+NPA201	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getStatus	KEYWORD2
+getRawPressure	KEYWORD2
+getRawTemperature	KEYWORD2
+getPressure	KEYWORD2
+getTemperature	KEYWORD2
+getAltitude	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+ADDRESS	LITERAL1
+COMMAND	LITERAL1
