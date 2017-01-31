@@ -30,7 +30,7 @@ void ArduinoI2C::beginTransmission(uint8_t address)
  */
 uint8_t ArduinoI2C::endTransmission(void)
 {
-	return Wire.endTransmission(true);
+	return Wire.endTransmission();
 }
 
 /**
